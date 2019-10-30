@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Jhonatan Fernando",
+        "number": 8,
+        "position": "Fixo",
+        "imageName": "jhonatan"
+    },
+    {
+        "id": 2,
+        "name": "Denys Balsamao",
+        "number": 11,
+        "position": "Pivô",
+        "imageName": "denys"
+    }
+    
+]

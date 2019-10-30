@@ -20,7 +20,7 @@ struct ContentView: View {
             
             Spacer()
             
-            Text("User Name").font(.headline).foregroundColor(.white)
+          /*  Text("User Name").font(.headline).foregroundColor(.white)
             TextField("User Name", text: $username)
             .font(.headline).foregroundColor(.black)
             .background(Color.white)
@@ -29,29 +29,41 @@ struct ContentView: View {
             Text("Password").font(.headline).foregroundColor(.white)
             SecureField("Password", text: $password)
             .font(.headline).foregroundColor(.black)
-            .background(Color.white)
+            .background(Color.white)*/
+            
             
             Button(action:
                        {
-                           print("Test")
+                          
+                        NavigationView
+                             {
+                         NavigationLink(destination: PlayerList()) {
+                             HStack{
+                                   Spacer()
+                        
+                                   Text("Entrar")
+                                   .font(.title)
+                                   .foregroundColor(.white)
+                                   
+                                   Spacer()
+                               }.padding(.vertical,3)
+                                .background(Color.red)
+                         }
+                         }
                            
                        }) {
                            HStack{
                                Spacer()
                                
-                               Text("Login")
-                               .font(.headline)
+                               Text("Entrar")
+                               .font(.title)
                                .foregroundColor(.white)
                                
                                Spacer()
-                           }.padding(.vertical, 10)
+                           }.padding(.vertical,3)
                             .background(Color.red)
-                            .padding(.horizontal, 5)
                        }
-            
-            
-            Spacer()
-        }.padding(.horizontal)
+        }
         .background(Image("background")
         .resizable()
         .scaledToFill()
