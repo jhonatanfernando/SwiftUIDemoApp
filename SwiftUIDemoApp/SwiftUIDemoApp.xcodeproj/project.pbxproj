@@ -23,6 +23,7 @@
 		F4EA875523664AB60065BFAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4EA875423664AB60065BFAA /* Assets.xcassets */; };
 		F4EA875823664AB60065BFAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4EA875723664AB60065BFAA /* Preview Assets.xcassets */; };
 		F4EA875B23664AB60065BFAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EA875923664AB60065BFAA /* LaunchScreen.storyboard */; };
+		F4F7CD14236FBD6C009D5EAC /* fontalland.png in Resources */ = {isa = PBXBuildFile; fileRef = F4F7CD13236FBD6B009D5EAC /* fontalland.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +37,7 @@
 		F41FA31523692247006AA02B /* shirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shirt.png; sourceTree = "<group>"; };
 		F41FA31723692265006AA02B /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		F41FA319236922C2006AA02B /* PlayerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetail.swift; sourceTree = "<group>"; };
-		F4EA874B23664AAD0065BFAA /* SwiftUIDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4EA874B23664AAD0065BFAA /* Milan BP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Milan BP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4EA874E23664AAD0065BFAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4EA875023664AAD0065BFAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F4EA875223664AAD0065BFAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		F4EA875723664AB60065BFAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F4EA875A23664AB60065BFAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4EA875C23664AB60065BFAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4F7CD13236FBD6B009D5EAC /* fontalland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fontalland.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		F41FA2FF2368F932006AA02B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F4F7CD13236FBD6B009D5EAC /* fontalland.png */,
 				F41FA31523692247006AA02B /* shirt.png */,
 				F41FA3132369087A006AA02B /* denys.png */,
 				F41FA3092368FDA2006AA02B /* jhonatan.png */,
@@ -88,7 +91,7 @@
 		F4EA874C23664AAD0065BFAA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F4EA874B23664AAD0065BFAA /* SwiftUIDemoApp.app */,
+				F4EA874B23664AAD0065BFAA /* Milan BP.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,7 +141,7 @@
 			);
 			name = SwiftUIDemoApp;
 			productName = SwiftUIDemoApp;
-			productReference = F4EA874B23664AAD0065BFAA /* SwiftUIDemoApp.app */;
+			productReference = F4EA874B23664AAD0065BFAA /* Milan BP.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -183,6 +186,7 @@
 				F41FA3142369087A006AA02B /* denys.png in Resources */,
 				F41FA30A2368FDA2006AA02B /* jhonatan.png in Resources */,
 				F41FA3012368F960006AA02B /* milan.json in Resources */,
+				F4F7CD14236FBD6C009D5EAC /* fontalland.png in Resources */,
 				F4EA875823664AB60065BFAA /* Preview Assets.xcassets in Resources */,
 				F41FA31623692247006AA02B /* shirt.png in Resources */,
 				F4EA875523664AB60065BFAA /* Assets.xcassets in Resources */,
@@ -349,8 +353,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.demo.SwiftUIDemoApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.milanbp;
+				PRODUCT_NAME = "Milan BP";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -369,8 +373,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.demo.SwiftUIDemoApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.milanbp;
+				PRODUCT_NAME = "Milan BP";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

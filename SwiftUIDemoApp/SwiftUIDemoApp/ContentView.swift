@@ -10,48 +10,58 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var username : String = ""
-    @State private var password : String = ""
+    @State var showLoginView: Bool = false
     
     var body: some View {
         
-            
-        VStack(alignment: .leading){
+        NavigationView {
+            ZStack{
+                NavigationLink(destination: PlayerList())
+                {
+                    HStack{
+                    
+                        Spacer()
+                        
+                        Text("Entrar")
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .padding(12)
+                        
+                         Spacer()
+                    }.background(Color.red)
+                }
+            }.background(Image("background"))
+        }
+        
+        
+        /*NavigationView
+        {
+            NavigationLink(destination: PlayerList())
+            {
+                Text("Entrar")
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .padding(12)
+            }.background(Color.red)
+             .cornerRadius(12)
+             .navigationBarHidden(true)
+        }*/
+        
+    
+        /*VStack{
             
             Spacer()
             
-          /*  Text("User Name").font(.headline).foregroundColor(.white)
-            TextField("User Name", text: $username)
-            .font(.headline).foregroundColor(.black)
-            .background(Color.white)
-            
-            
-            Text("Password").font(.headline).foregroundColor(.white)
-            SecureField("Password", text: $password)
-            .font(.headline).foregroundColor(.black)
-            .background(Color.white)*/
-            
-            
-            Button(action:
+          if showLoginView {
+              PlayerList()
+          }
+          else
+          {
+           Button(action:
                        {
-                          
-                        NavigationView
-                             {
-                         NavigationLink(destination: PlayerList()) {
-                             HStack{
-                                   Spacer()
-                        
-                                   Text("Entrar")
-                                   .font(.title)
-                                   .foregroundColor(.white)
-                                   
-                                   Spacer()
-                               }.padding(.vertical,3)
-                                .background(Color.red)
-                         }
-                         }
-                           
-                       }) {
+                          self.showLoginView = true
+                       })
+                        {
                            HStack{
                                Spacer()
                                
@@ -63,12 +73,13 @@ struct ContentView: View {
                            }.padding(.vertical,3)
                             .background(Color.red)
                        }
+            }
         }
         .background(Image("background")
         .resizable()
         .scaledToFill()
         .clipped())
-            .edgesIgnoringSafeArea([.top])
+        .edgesIgnoringSafeArea([.top]) */
     }
 }
 

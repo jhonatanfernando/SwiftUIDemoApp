@@ -11,13 +11,17 @@ import SwiftUI
 struct PlayerList: View {
     var body: some View {
         
-        NavigationView
-        {
+        //NavigationView
+        //{
                 List(playersData, id: \.id)
                 { (player) in
-                     PlayerRow(player: player)
-                }.navigationBarTitle(Text("Players"))
-        }
+                  
+                    NavigationLink(destination: PlayerDetail(player: player)) {
+                        PlayerRow(player: player)
+                    }
+                    
+                }.navigationBarTitle(Text("Jogadores"))
+        //}
     }
 }
 

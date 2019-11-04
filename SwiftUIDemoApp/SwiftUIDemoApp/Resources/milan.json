@@ -12,6 +12,13 @@
         "number": 11,
         "position": "Pivô",
         "imageName": "denys"
+    },
+    {
+        "id": 3,
+        "name": "Leandro Fontalland",
+        "number": 6,
+        "position": "Ala Esquerdo",
+        "imageName": "fontalland"
     }
     
 ]
