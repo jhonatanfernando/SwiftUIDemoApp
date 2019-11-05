@@ -10,6 +10,8 @@ import SwiftUI
 
 struct PlayerDetail: View {
     
+    @State var IsMoreDetailViewPresented = false
+    
     var player : Player
         
         var body: some View {
@@ -56,8 +58,19 @@ struct PlayerDetail: View {
             .scaledToFill()
             .clipped())
             .navigationBarTitle(Text(player.name))
-
-        }
+            .navigationBarItems(trailing:
+                HStack
+                {
+                    Button(action: { self.IsMoreDetailViewPresented = true })
+                    {
+                    Image(systemName: "person")
+                        .font(.title)
+                        .foregroundColor(.red)
+                    }.sheet(isPresented: $IsMoreDetailViewPresented) { PlayerMoreDetail(player: self.player)}
+                    
+                    
+                    })
+    }
     }
 
 
